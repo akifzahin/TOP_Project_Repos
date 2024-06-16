@@ -1,0 +1,71 @@
+--TOP CSS Foundations
+#1 --Types of Selectors
+a) \* {} - universal selector
+b) typeName {} - type selector
+c) .className - class selector - can be used multiple times
+d) #idName - id selector - can be used only once (dont use)
+e) .className1,.className2 - grouping selector - groups repeating attributes in different classes
+f) .type1.type2 - chaining selector - applies to a particular type that share a common type by whitespace - also works for id and classes
+g) .grandparentType .parentType .childType - desendant combinator selector - selects according to a hierarchy of nesting by starting from the child
+
+#2 --Specificity
+a) ID > Class > Type > Combinators
+b) Rule that uses more of the same selector gets the preferrence
+c) If rules have same but combined selectors, the specificity is checked in order
+d) Symbols like \*,+,~,>,. do not add specificity
+
+#3 --Inheritance
+- When nested child elements get the rules of the upper parent element
+- Except when the child is directly targeted
+  If all else fails and two rules have the same specificity over and over again, the last written style gets applied
+
+#4 --Box Model
+-every element is actually like a box whose properties can be manipulated to change its dimenstions and lay them out
+
+#5 --Some properties
+-padding - changes space BETWEEN border AND content
+-margin - changes space BETWEEN border AND borders of adjacent boxes
+-border - changes between margin and padding
+
+#6 --Box Model
+== inline 
+== block 
+- Used with display to control 
+- dont use padding or margin or inline elements
+- Also have variations such inline-block etc.
+- div and span main component of box Model
+
+#7 --Flexbox
+- uses flexContainer and flexItem user classes
+- uses display:flex to change
+- all flexItems are all flexContainer 
+- uses the property flex:1 
+
+#8 --Flexbox Growing and Shrinking
+- shorthand properties are CSS properties that let you set the values of multiple other CSS properties simultaneously. 
+- flex has 3 shorthands:- flex-grow, flex-shrink, flex-basis
+- so if flex:1 = flex-grow: 1, flex-shrink: 1, flex-basis: 0
+- it also means flex: 1 1 0
+- flex-grow = growth factor, flex-shrink = shrink factor 
+- if flex-grow:1, it grows the div by 1x the size of others depending on browser SIZE
+- if flex-shrink:1, it shrinks the div by 1x the size of others depending on browser SIZE
+- flex items do not necessarily respect your given values for width
+- when the parent is too small, the default behavior is for them to shrink to fit. viceversa
+- flex basis:0% sets initial size
+- flex:auto sets basis to auto while flex:1 sets it 0
+- Generally, you’re most likely to use declarations like flex: 1; to make divs grow evenly and flex-shrink: 0
+
+#9 --Axes
+- flexbox works both hori and verti
+- normally display:flex sets it to hori
+- we use flex-direction:column for verti
+- doesnt work if flex:1 since flex-basis then 0 not AUTO
+- block-level elements default to the full width of their parent. 
+- adds complexity because block-level elements default to the height of their content
+
+#10 --Alignment
+- flex:1 aligns items equally but we need different sizes sometimes
+- use :- justify-content: space between to flexContainer
+- this aligns items across main axis
+- we use align-items: to change placement of items in cross axis
+- if flex-direction:column, main axis=row, cross axis=column, viceversa
