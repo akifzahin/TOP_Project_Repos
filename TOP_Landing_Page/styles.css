@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 0;
+    border-bottom: 6px solid lightgreen;
+
+}
+
+body {
+    margin: 0;
+
+}
+
+.bodyTag {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.firstContentContainer {
+    background-color: aliceblue;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+
+
+}
+
+.firstContent1 {
+    font-weight: 900;
+    font-size: 48px;
+    color: lightgreen;
+    text-decoration: solid underline;
+}
+
+.imageAside {
+    background-color: thistle;
+    padding: 40px;
+    margin-left: 50px;
+}
+
+.cardContainer {
+    display: flex;
+    flex: 1;
+}
+
+.secondContentContainer {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.secondContent1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    text-decoration: underline;
+
+}
+
+.thirdContentContainer {
+
+    margin: 0;
+    width: 50vh;
+    padding: 20px;
+    background-color: aliceblue;
+
+}
+
+.quote {
+    font-style: italic;
+    font-size: larger;
+}
+
+.author {
+
+    font-weight: bold;
+    padding-left: 300px;
+
+}
+
+.fourthContentContainer {
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+    margin-bottom: 90px;
+
+}
+
+.card {
+    border-radius: 20px;
+    border-color: black;
+    padding: 20px;
+    margin: 20px;
+    border: 5px;
+    border-style: solid;
+    width: 120px;
+    height: auto;
+    background-color: aquamarine;
+
+}
+
+
+.button2,
+.button1 {
+    padding: 7px;
+    margin: 5px;
+    height: auto;
+    width: 90px;
+    border: 2px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: white;
+    background-color: brown;
+    color: white;
+
+
+}
+
+.button2:active,
+.button1:active {
+    background-color: green;
+    transition: .5s;
+}
+
+.button2 {
+    margin-left: 90px;
+}
+
+.footer {
+
+    background-color: aliceblue;
+    margin: 0;
+    text-align: center;
+    padding: 8px;
+
+
+}
+
+ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
