@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-color: lightpink;
+}
+
+.rockWord,
+.paperWord,
+.scissorWord {
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.rockWord {
+    margin: 50px;
+    padding: 10px;
+
+
+}
+
+.paperWord {
+    margin-top: 90px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.scissorWord {
+    margin-top: 160px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.bodyTag {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.headingContainer {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-shrink: 0;
+    border-bottom: 8px solid red;
+
+}
+
+.choicesContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.insideChoice {
+    display: flex;
+    flex: 1;
+    flex-shrink: 0;
+    justify-content: space-between;
+    flex-grow: 0;
+
+}
+
+.chooseText {
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: 4px underline;
+
+}
+
+button {
+    padding: 10px;
+    font-size: larger;
+    margin: 10px;
+}
